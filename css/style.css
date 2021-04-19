@@ -1,0 +1,18 @@
+body{
+    font-family: sans-serif;
+}
+.MainPageCegLogo{
+    width: 25%;
+    height: auto;
+    position:absolute;
+    animation: ClosingAnimation 2s;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.MainPageContents{
+    display: none;
+}
+@keyframes ClosingAnimation{
+    from{opacity:1} to{opacity:0}
+}

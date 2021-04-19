@@ -1,18 +1,18 @@
-body{
+body{ /* Whole Website Font-Family is Sans-Serif*/
     font-family: sans-serif;
 }
-.MainPageCegLogo{
+.MainPageCegLogo{ /*Home Page Logo Animation And Auto Adjusting Height And Width*/
     width: 25%;
     height: auto;
     position:absolute;
-    animation: ClosingAnimation 2s;
+    animation: FadingOutAnimation 2s;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.MainPageContents{
+.MainPageContents{ /*Displaying the Main Contents in the page as None for the logo animation to happen*/
     display: none;
 }
-@keyframes ClosingAnimation{
+@keyframes FadingOutAnimation{  /*Fadeing Out Animation*/
     from{opacity:1} to{opacity:0}
 }

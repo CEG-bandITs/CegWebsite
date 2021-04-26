@@ -1,6 +1,9 @@
 body{ /* Whole Website Font-Family is Sans-Serif*/
-    font-family: sans-serif;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0px; /*Rember i removed padding and margin for removing extra unwanted white spaces*/
+    padding: 0px;
 }
+
 .MainPageCegLogo{ /*Home Page Logo Animation And Auto Adjusting Height And Width*/
     width: 25%;
     height: auto;
@@ -8,11 +11,93 @@ body{ /* Whole Website Font-Family is Sans-Serif*/
     animation: FadingOutAnimation 2s;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*This code make the logo go at centre*/
 }
+
 .MainPageContents{ /*Displaying the Main Contents in the page as None for the logo animation to happen*/
     display: none;
 }
+
 @keyframes FadingOutAnimation{  /*Fadeing Out Animation*/
     from{opacity:1} to{opacity:0}
+}
+
+/*Footer - Done By Muthu Palaniyappan OL*/
+footer{
+    background-color: black;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    max-height: 200px;
+}
+
+footer .footer-logo{
+    flex: 1;
+}
+
+footer .footer-logo  img{
+    width: 100px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+footer .footer-address{
+    padding: 10px;
+    flex: 2;
+    font-size: 15px;
+}
+
+footer .footer-links{
+    flex: 7;
+}
+
+footer .footer-links ul {  
+    list-style-type: none;
+    margin: 16px;
+    padding: 0px;
+}
+
+footer .footer-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .footer-links ul li{
+    padding: 3px;
+}
+
+footer .footer-links ul li :hover{
+    padding: 3px;
+    background-color: #424242;
+}
+
+footer .footer-links ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    /*When Site is viewed from tablet logo and address will be removed*/
+    footer .footer-logo{
+        display: none;
+    }
+    footer .footer-address{
+        display: none;
+    }
+}
+
+/*Bellow Footer - Done By Muthu Palaniyappan OL*/
+.page-end-below-footer{
+    background-color: black;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+    color: white;
+}
+
+.page-end-below-footer label a{
+    text-decoration: none;
+    color: white;
 }

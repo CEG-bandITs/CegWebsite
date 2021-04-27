@@ -3,6 +3,8 @@ setTimeout(function() {
     OpeningLogoDiv.parentNode.removeChild(OpeningLogoDiv); // Removing the logo Div After Home Page animation (That 2 seconds animation))
 
     document.getElementById("MainPageContents").style.display = "block"; // Showing the content in home page after animation.
+    document.getElementById("paralax1").style.height = screen.height +20;
+    document.getElementById("paralax2").style.height = screen.height +20;
 }, 2000); // The code mentioned above this line will run after 2 seconds of logo animation.
 
 function openNav(){
@@ -12,3 +14,4 @@ document.getElementById("myNav").style.height = "100%";
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+

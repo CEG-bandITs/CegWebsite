@@ -12,15 +12,21 @@
     <script src="JS\scripts.js"></script> <!-- Main Home Page JS is here -->
 </head>
 <body>
+    
+    
     <div class="cegopeninglogodiv" id="OpeningLogoDiv"> <!-- This div holds the image and it gets removed totaly after 2 seconds i.e, after animation is over -->
         <img src="Images\CegLogoTransparent.png" alt="College Of Engineering Logo" class="MainPageCegLogo"> <!-- CEG Logo For for animation-->
     </div>
+    
+    
     <div class="MainPageContents" id="MainPageContents">
         <!-- This Div Contains All Data Other Than Main Logo (i.e., Whole Website Home Page minus animation, Bascially The Home Page) -->
         
         <header> <!--Header Div-->
-            <h1>Header</h1>
-            <button class="openbtn float-right" onclick="openNav()">☰ Menu</button> 
+            <div id="parallax1" class="parallax1">
+                <h1>College Of Engineering, Guindy</h1>
+                <button class="openbtn float-right" onclick="openNav()">☰ Menu</button>
+            </div> 
         </header>
 
         <nav id="myNav" class="overlay">
@@ -33,8 +39,14 @@
         </nav>
         
         
-        <section> <!--Section Div-->
+        <section> <!--Section 1 Div-->
+            <div class="parallax2" id="parallax2">
+            </div>
+        </section>
 
+        <section> <!--Section 2 Div-->
+            <div class="parallax3" id="parallax3">
+            </div>
         </section>
         
         

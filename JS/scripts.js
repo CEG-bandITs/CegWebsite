@@ -5,9 +5,11 @@ setTimeout(function() {
     document.getElementById("MainPageContents").style.display = "block"; // Showing the content in home page after animation.
 }, 2000); // The code mentioned above this line will run after 2 seconds of logo animation.
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "250px";
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("MainPageContents").style.marginLeft = "250px";
   }
   
   function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("MainPageContents").style.marginLeft= "0";
   }

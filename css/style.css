@@ -22,11 +22,11 @@ body{ /* Whole Website Font-Family is Sans-Serif*/
     from{opacity:1} to{opacity:0}
 }
 /*Side Pannel*/
-.sidepanel  {
+.sidebar {
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
-    height: 100%;
     top: 0;
     left: 0;
     background-color: #111;
@@ -35,7 +35,7 @@ body{ /* Whole Website Font-Family is Sans-Serif*/
     padding-top: 60px;
   }
   
-  .sidepanel a {
+  .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -44,15 +44,16 @@ body{ /* Whole Website Font-Family is Sans-Serif*/
     transition: 0.3s;
   }
   
-  .sidepanel a:hover {
+  .sidebar a:hover {
     color: #f1f1f1;
   }
   
-  .sidepanel .closebtn {
+  .sidebar .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
+    margin-left: 50px;
   }
   
   .openbtn {
@@ -65,9 +66,19 @@ body{ /* Whole Website Font-Family is Sans-Serif*/
   }
   
   .openbtn:hover {
-    background-color:#444;
+    background-color: #444;
   }
-}
+  
+  #MainPageContents {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
 /*Footer*/
 footer{
     background-color: black;
